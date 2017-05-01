@@ -10,6 +10,10 @@
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+	color: #31081F;
+}
+body {
+	background-color:#f7f7EB;
 }
 /* header */
 .header{
@@ -57,4 +61,46 @@
 /* footer*/
 footer{
 	background-color: pink;
+}
+p, h1, h2, h3, h4, h5, h6 {font-family:'helvetica','arial','sans-serif';
+}
+h6{font-size: 1.4em;
+}
+h5{font-size:1.05em;
+}
+h4{font-size:2em;
+}
+h3{font-size: 2.5em;
+}
+h2{font-size: 3em;
+}
+h1{font-size: 3.05em;
+}
+p{font-size: 1.4em;
+}
+li{
+	font-size: 1.4em; 
+}
+
+.secundario{
+	font-size: 0.7em;
+}
+
+.navegador {
+	font-size: 0.9em;
+}
+
+a{
+	color: #31081F;
+}
+a:hover{
+	color: #f7f7EB;
+	background-color: #31081F;
+}
+
+.icono {
+	font-size: 1em;
+}
+.icono:hover{
+	color: #f7f7EB;
 }

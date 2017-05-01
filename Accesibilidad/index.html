@@ -4,24 +4,53 @@
 	<title>Accesibilidad Web</title>
 	<meta charset="utf-8">
 	<!-- FAV ICON -->
-	<link rel="icon" type="image/gif" href="img/ico.gif"/>
+	<link rel="icon" type="image/gif" href="/img/ico.gif"/>
 	<!-- DESCRIPCIÓN DE CONTENIDO -->
 	<meta name="description" content="Sitio sobre accesibilidad Web. Terminología y métodos para cumplir con la Ley de Accesibilidad Web en Argentina">
 	<meta name="keywords" content="HTML,CSS, Accesibilidad Web, Accesibilidad, Diseño Web accesible, ley de accesibilidad web">
-	<meta name="author" content="Grupo X: Daniela Belvedere,<!-- PONGAN ACÁ SU NOMBRE -->">
+	<meta name="author" content="Grupo X: Astrid Aldazoro, Daniela Belvedere, Florencia Echazú, Erica Lafuente, Sonia Morales, Tatiana Ortiz, Consuelo Romano, Florencia Secchi, Florencia Temporelli, Constanza Yáñez Calderón">
 	<!-- HOJAS DE ESTILOS -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/estilos.css">
-	<link rel="stylesheet" type="text/css" media="all" href="css/atbar.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<!-- FUENTE DE GOOGLE -->
 	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> 
 	<!-- VIEWPORT-->
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 </head>
 <body>
-	<?php include('toolbar-launcher.php'); ?>
-	
 	<div class="container-fluid">
+		<div class="row menu">
+				<!--NAV SUPERIOR-->
+		        	<nav class="col-xs-12 col-sm-12 col-md-12 bar">
+			            <ul class="nav navbar-nav pull-right borde-nav navegador">
+			              <li>
+			                <a href="html/accesibilidad.html" accesskey="0" tabindex="1"><span class="fa fa-wheelchair icono" aria-hidden="true"></span></a>
+			              </li>
+			              <li>
+			                <a href="#accesibilidad" alt="ir a definiciones de accesibilidad" tabindex="2" accesskey="1"> Definición</a>
+			              </li>
+			              <li>
+			                <a href="#ley" alt="Sobre la Ley de Accesibilidad" tabindex="3" accesskey="2"> Ley de Accesibilidad</a>
+			              </li>
+			              <li>
+			                <a href="#pautas" alt="Sobre la Ley de Accesibilidad" tabindex="4" accesskey="3"> Pautas</a>
+			              </li>
+			             
+			             <li>
+			                <a href="#reclamo" alt="¿A quién reclamar?" tabindex="5" accesskey="4"> ¿A quién reclamar?</a>
+			              </li>
+			              <li>
+			                <a href="#soluciones" alt="Algunas soluciones básicas" tabindex="6" accesskey="5"> Algunas soluciones Web</a>
+			              </li>
+			              <li>
+			                <a href="#razones" alt="Beneficios de hacer una Web accesible" tabindex="7" accesskey="6"> Beneficios</a>
+			              </li>
+			              <li>
+			                <a href="#herramientas" alt="herramientas para el análisis de sitios y ayuda de desarrollo web accesible" tabindex="8" accesskey="7"> Herramientas de análisis y ayuda</a>
+			              </li>
+					</nav><!--fin nav superior-->
+				</div><!--fin menu-->
 		<div class="row ">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<header class="header">
@@ -29,19 +58,17 @@
 				</header>
 			</div>
 		</div><!--fin .row-->
-		<!-- 
-			ACA IRIA EL NAV
-		-->
-		<section class="row accesibilidad">
+		<section class="row accesibilidad" id="accesibilidad">
+
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<h2>¿Qué es "accesibilidad"?</h2>
+				<h2 tabindex="9">¿Qué es "accesibilidad"?</h2>
 				<p>
 					La accesibilidad o accesibilidad universal es el grado en el que todas las personas pueden utilizar un objeto, visitar un lugar o acceder a un servicio, independientemente de sus capacidades técnicas, cognitivas o físicas.
 				</p><!-- fin p-->
 			</div><!--fin 12-->
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<h3>Tipos de accesibilidad en Web</h3>
+					<h3 tabindex="10">Tipos de accesibilidad en Web</h3>
 					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
 						<h4>Visuales</h4>
 						<p>
@@ -68,12 +95,12 @@
 					</div><!-- fin auditivas-->
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<p>
-							A las personas con discapacidad podemos añadir el conjunto de personas de la "tercera edad", ya que las carencias y problemas de los medios físicos, así como muchas veces el contenido, hacen que estas personas se encuentren también en riesgo de infoexclusión.
+							Se considera, también, al conjunto de personas de la "tercera edad", ya que las carencias y problemas de los medios físicos, así como muchas veces el contenido, hacen que estas personas se encuentren también en riesgo de infoexclusión.
 						</p><!-- fin p-->
 					</div><!-- fin tercera-edad-->
 				</article><!-- fin article .row-->
 				<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<h3>Discapacidad en números</h3>
+					<h3 tabindex="11">Discapacidad en números</h3>
 					<p>
 						La Organización Mundial de la Salud (OMS) recoge en sus informes un total de 600 millones de personas con discapacidad. Hay más usuarios con problemas de visión que usuarios de IE8.
 					</p><!-- fin p-->
@@ -82,7 +109,7 @@
 					</p><!-- fin p-->
 				</article><!-- fin article .row-->
 				<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<h3>Distribución de las diferentes discapacidades en Argentina</h3>
+					<h3 tabindex="12">Distribución de las diferentes discapacidades en Argentina</h3>
 					<p>
 						En Argentina, de la totalidad de la población que sufre de alguna discapacidad, el 40% de padecen de dificultades motoras. Un 22% sufre una discapacidad visual y un 18% dificultades auditivas. Además el 15% de este grupo padece de alguna discapacidad mental y finalmente el 5% restante de alguna otra discapacidad.
 					</p>
@@ -95,8 +122,8 @@
 				</article><!-- fin article -->
 			</div><!--fin 12-->
 		</section><!--fin SECTION .row-->
-		<section class="row">
-			<h2>Ley 26.653 de accesibilidad de la información en las páginas web <br/>(11/03/2010)</h2>
+		<section class="row" id="ley">
+			<h2 tabindex="13">Ley 26.653 de accesibilidad de la información en las páginas web <br/>(11/03/2010)</h2>
 			<p>
 				En la actualidad en el ámbito internacional, las recomendaciones del W3C-WAI (Web accesibility Initiative del World Wide Web Consortium) constituyen la referencia en cuanto a criterios y estrategias de accesibilidad a Internet.
 				Estas recomendaciones no son normas estrictas, sino que indican lo que el usuario debe poder hacer y qué tipo de información debe estar disponible (recomendaciones).
@@ -110,7 +137,7 @@
 				</ul><!-- fin ol-->
 			</p><!-- fin p-->
 			<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pautas">
-				<h3>Pautas para cumplir con la Ley</h3>
+				<h3 tabindex="14" id="pautas">Pautas para cumplir con la Ley</h3>
 				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 					<div class="pauta">
 						<h4>Pauta 1:</h4>
@@ -228,53 +255,68 @@
 				</div><!-- fin 14-->
 				</div><!-- fin class para centrar-->
 			</article><!-- fin article .pautas-->
-			<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 reclamo">
-				<h3>¿A quién le debemos o podemos reclamar que está ley se cumpla?</h3>
+			<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 reclamo" id="reclamo">
+				<h3 tabindex="15">¿A quién le debemos o podemos reclamar que está ley se cumpla?</h3>
 				<p>La ley designa como Autoridad de Aplicación a la <a href="https://www.argentina.gob.ar/relacionesparlamentarias" target="_blank">Secretaría de Gabinete y Coordinacion Administrativa de la Jefatura de Gabinete de Ministros</a>
 				</p>
 			</article><!-- fin .reclamo -->
-			<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 basico">
-				<h3>Algunas soluciones básicas:</h3>
+			<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12 basico" id="soluciones">
+				<h3 tabindex="16">Algunas soluciones básicas:</h3>
 				<ul>
 					<li><span>&#10149;</span><strong> Tamaño del texto</strong>
-						<ul>
+						<ul class="secundario">
 							<li><span>&#187;</span> Tamaños relativos (em);</li>
-							<li><span>&#187;</span> No utilizar etiquetas header para crear efectos de texto.<li>
+							<li><span>&#187;</span> No utilizar etiquetas header para crear efectos de texto;<li>
+							<li><span>&#187;</span> Oraciones cortas.<li>
 						</ul>
 					</li>
 					<li><span>&#10149;</span><strong> Idioma</strong>
-						<ul>
+						<ul class="secundario">
 							<li><span>&#187;</span> Especificar idioma del HTML;</li>
 							<li><span>&#187;</span> Generar un span con atributo “lang” por cada palabra extranjera.<li>
 						</ul>
 					</li>
 					<li><span>&#10149;</span><strong> Semántica</strong>
-						<ul>
+						<ul class="secundario">
 							<li><span>&#187;</span> HTML 5.</li>
 						</ul>
 					</li>
 					<li><span>&#10149;</span><strong> Contenidos en lenguaje sencillo e ilustrados con diagramas y animaciones</strong>
-						<ul>
-							<li><span>&#187;</span> Del texto a la imagen.</li>
+						<ul class="secundario">
+							<li><span>&#187;</span> Del texto a la imagen;</li>
+							<li><span>&#187;</span> Utilizar la convención básica de los colores apoyada con gráficos/iconos.</li>
 						</ul>
 					</li>
-				</ul>
+					<li><span>&#10149;</span><strong> Color</strong>
+						<ul class="secundario">
+							<li><span>&#187;</span> Buen contraste de las imágenes;</li>
+							<li><span>&#187;</span> Iconografía  (ejemplo: <span class="glyphicon glyphicon-circle-arrow-down"></span> icono para “descargar”) y convenciones de estructura.</li>
+						</ul>
+					</li>
+					<li><span>&#10149;</span><strong> Atributos de foco</strong>
+						<ul class="secundario">
+							<li><span>&#187;</span> Establecer una tecla de acceso rápido a un elemento HTML (accesskey);</li>
+							<li><span>&#187;</span> Establecer la posición del elemento en el orden de tabulación de la página. (tabindex. Ejemplo: <a href="https://www.wufoo.com/html5/attributes/27-tabindex.html" alt="link al ejemplo de Tabindex" title="Link al ejemplo de Tabindex" target="_blank">https://www.wufoo.com/html5/attributes/27-tabindex.html</a>).</li>
+						</ul>
+					</li>
+				</ul><!-- fin ul-->
 			</article><!-- fin .basico -->
 		</section><!--fin SECTION .row-->
-		<section class="row razones">
-			<h2>¿Por qué hacer una web accesible?</h2>
+		<section class="row razones" id="razones">
+			<h2 tabindex="17">¿Por qué hacer una web accesible?</h2>
 			<ul>
 				<li><span>&#10149;</span> Las normas o requisitos no incrementan apreciablemente el trabajo o la complejidad de creación de un sitio y no limitan las posibilidades artísticas del diseñador.</li>
 				<li><span>&#10149;</span> Aumenta el número de potenciales visitantes de la página web.</li>
 				<li><span>&#10149;</span> Disminuye los costos de desarrollo y mantenimiento.</li>
 				<li><span>&#10149;</span> Reduce el tiempo de carga de las páginas web y la carga del servidor web.</li>
 				<li><span>&#10149;</span> Aumenta la usabilidad de la página web.</li>
-				<li><span>&#10149;</span> Demostramos que nos implicamos socialmente.</li>
+				<li><span>&#10149;</span> Demuestra que se implica socialmente.</li>
 				<li><span>&#10149;</span> Aumenta el capital humano de las comunidades de aprendizaje potenciando la inteligencia colectiva.</li>
+				<li><span>&#10149;</span> Beneficia también a organizaciones y a personas sin discapacidad o con incapacidades temporales..</li>
 			</ul><!-- fin lista-->
 		</section><!--fin SECTION .row .razones-->
-		<section class="row herramientas">
-			<h2>Herramientas de análisis y referencias</h2>
+		<section class="row herramientas" id="herramientas">
+			<h2 tabindex="18">Herramientas de análisis y referencias</h2>
 			<ul>
 					<li><span>&#10149;</span><strong> Contrast Ratio:</strong> Puedes encontrarlo <a href="http://leaverou.github.com/contrast-ratio/ " target="_blank">aquí</a>.</li>
 					<li><span>&#10149;</span><strong lang="en"> ChromeVox (Chrome): </strong><a href="https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn?hl=es" target="_blank">Añadelo a <span lang="en">Chrome</span></a></li>
@@ -282,6 +324,10 @@
 					<li><span>&#10149;</span><strong lang="en"> WAX (Firefox): </strong><a href="https://addons.mozilla.org/en-US/firefox/addon/openwax/?src=dp-dl-othersby" target="_blank"> Añadelo como <span lang="en">add-on</span> a <span lang="en">Firefox</span></a></li>
 					<li><span>&#10149;</span><strong lang="en"> WAX (Firefox): </strong><a href="https://www.atbar.org/" target="_blank"> Añadelo como <span lang="en">add-on</span> a <span lang="en">Firefox</span></a></li>
 					<li><span>&#10149;</span><strong> Sitio del Observatorio de Accesibilidad Argentina: </strong><a href="http://wcag.com.ar/" target="_blank"> http://wcag.com.ar/</a></li>
+					<li><span>&#10149;</span><strong> Chrome Daltonize: </strong><a href="http://www.daltonize.org/2010/05/chrome-daltonize-color-accessibility-in_13.html" target="_blank"> http://www.daltonize.org/2010/05/chrome-daltonize-color-accessibility-in_13.html</a></li>
+					<li><span>&#10149;</span><strong> Planear Sitio: </strong><a href="https://www.w3.org/WAI/impl/Overview" target="_blank"> https://www.w3.org/WAI/impl/Overview</a></li>
+					<li><span>&#10149;</span><strong> Consejos de Accesibilidad: </strong><a href="https://olgacarreras.blogspot.com.ar/2012/01/consejos-avanzados-de-accesibilidad-web.html" target="_blank"> https://olgacarreras.blogspot.com.ar/2012/01/consejos-avanzados-de-accesibilidad-web.html</a></li>
+					<li><span>&#10149;</span><strong> Plantilla de Accesibilida: </strong><a href="https://olgacarreras.blogspot.com.ar/2007/08/plantilla-base-xhtml.html" target="_blank"> https://olgacarreras.blogspot.com.ar/2007/08/plantilla-base-xhtml.html</a></li>
 			</ul><!-- fin ol-->
 		</section><!--fin SECTION .row .herramientas-->
 		<footer class="row footer">
