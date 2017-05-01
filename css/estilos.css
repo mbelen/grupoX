@@ -1,0 +1,63 @@
+/* FALTA:
+	-DARLE COLOR;
+	-MEJOR ORGANIZACIÓN DEL CONTENIDO (MARGENES Y PADDINGS)
+	-GENERAR MEDIDAS EN EM PARA H1,H2,H3 Y H4;
+	-CREAR NAV.
+*/
+*{
+	padding: 0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* header */
+.header{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+/* PAUTAS */
+
+.pautas{
+	margin-bottom: 5px;
+	/*overflow:hidden;*/
+	
+}
+.pauta{
+	background: antiquewhite;
+	display: flex;
+	flex-direction: column;
+	flex-wrap:wrap;
+	justify-content: center;
+	margin-bottom: 5px;
+	/*overflow:hidden;*/
+}
+
+.pauta h4{
+	text-align: center;
+	/*overflow:hidden;*/
+}
+
+.pauta p{
+	padding: 0 30px 0 30px ;
+	text-align: center;
+	/*overflow:hidden;*/
+}
+
+/* BASICO*/
+.basico ul{
+	list-style: none;
+}
+
+.basico ul ul{
+	margin-left: 20px;
+}
+
+/* footer*/
+footer{
+	background-color: pink;
+}
+p,h1, h2, h3, h4, h5, h6 {font-family:'helvetica','arial','sans-serif';
+
+}
