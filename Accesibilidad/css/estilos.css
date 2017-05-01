@@ -21,32 +21,59 @@ body {
 	justify-content: center;
 	align-content: center;
 }
+
+/* MODULO DE DISCAPACIDAD */
+.tipologia{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 10px;
+}
+.modulo{
+	width: 250px;
+	height: 250px;
+	border: 2px solid #31081F;
+}
+
+.modulo h4{
+	background-color: #31081F;
+	color:#f7f7EB;
+	text-align: center;
+	margin: 0;
+	height: 35px;
+}
+.modulo p{
+	padding: 10px;
+}
 /* PAUTAS */
 
-.pautas{
-	margin-bottom: 5px;
-	/*overflow:hidden;*/
-	
-}
 .pauta{
-	background: antiquewhite;
+	background: #31081F;
+	color: #f7f7EB;
 	display: flex;
 	flex-direction: column;
 	flex-wrap:wrap;
-	justify-content: center;
-	margin-bottom: 5px;
+	justify-content: baseline;
+	margin-top: 5px;
+	height: 145px;
 	/*overflow:hidden;*/
+	padding: 0 35px;
 }
 
+.chica {
+	height: 100px;
+}
 .pauta h4{
 	text-align: center;
 	/*overflow:hidden;*/
 }
 
 .pauta p{
-	padding: 0 30px 0 30px ;
 	text-align: center;
-	/*overflow:hidden;*/
+	
+}
+.pauta p em{
+	color: #f7f7EB;
 }
 
 /* BASICO*/
