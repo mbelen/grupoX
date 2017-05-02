@@ -12,6 +12,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 	color: #31081F;
+	list-style-type: none;
 }
 body {
 	background-color:#f7f7EB;
