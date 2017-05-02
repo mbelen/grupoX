@@ -4,6 +4,7 @@
 	-GENERAR MEDIDAS EN EM PARA H1,H2,H3 Y H4;
 	-CREAR NAV.
 */
+
 *{
 	padding: 0;
 	margin:0;
@@ -15,6 +16,59 @@
 body {
 	background-color:#f7f7EB;
 }
+p, h1, h2, h3, h4, h5, h6 {
+	font-family:'helvetica','arial','sans-serif';
+}
+h6{
+	font-size: 1.4em;
+}
+h5{
+	font-size:1.05em;
+}
+h4{
+	font-size:2em;
+}
+h3{
+	font-size: 2.5em;
+}
+h2{
+	font-size: 3em;
+}
+h1{
+	font-size: 3.05em;
+}
+p{
+	font-size: 1.4em;
+}
+li{
+	font-size: 1.4em; 
+}
+
+/* ARREGLO LISTAS SECUNDARIAS */
+.secundario{
+	font-size: 0.7em;
+}
+
+/* NAVEGADOR */
+.navegador {
+	font-size: 0.9em;
+}
+
+nav ul li a{
+	color: #31081F;
+}
+nav ul li a:hover{
+	color: #f7f7EB;
+	background-color: #31081F;
+}
+
+.icono {
+	font-size: 1em;
+}
+.icono:hover{
+	color: #f7f7EB;
+}
+/* 
 /* header */
 .header{
 	display: flex;
@@ -45,6 +99,35 @@ body {
 .modulo p{
 	padding: 10px;
 }
+
+/* GRÁFICO DE TORTA */
+.torta{
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	flex-grow:0;
+}
+.torta img{
+	transition: all 0.5s ease;
+	align-self: center;
+}
+.torta img:hover{
+   -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   filter: grayscale(100%);
+   transition: all 0.5s ease;
+}
+.torta figcaption h6{
+	text-align:center;
+}
+.torta figcaption h6 a{
+	color: #31081F;
+	text-decoration: underline;
+}
+
+
+
 /* PAUTAS */
 
 .pauta{
@@ -87,47 +170,14 @@ body {
 
 /* footer*/
 footer{
-	background-color: pink;
-}
-p, h1, h2, h3, h4, h5, h6 {font-family:'helvetica','arial','sans-serif';
-}
-h6{font-size: 1.4em;
-}
-h5{font-size:1.05em;
-}
-h4{font-size:2em;
-}
-h3{font-size: 2.5em;
-}
-h2{font-size: 3em;
-}
-h1{font-size: 3.05em;
-}
-p{font-size: 1.4em;
-}
-li{
-	font-size: 1.4em; 
-}
-
-.secundario{
-	font-size: 0.7em;
-}
-
-.navegador {
-	font-size: 0.9em;
-}
-
-a{
-	color: #31081F;
-}
-a:hover{
-	color: #f7f7EB;
 	background-color: #31081F;
+	color:#f7f7EB;
+	padding-right: 10px;
+}
+footer h5 a, footer h5 span{
+	color:#f7f7EB;
+}
+footer h5 a{
+	text-decoration: underline;
 }
 
-.icono {
-	font-size: 1em;
-}
-.icono:hover{
-	color: #f7f7EB;
-}
