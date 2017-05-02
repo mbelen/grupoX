@@ -76,6 +76,10 @@ nav ul li a:hover{
 	align-content: center;
 }
 
+.header h1 a img{
+	width: 100%;
+}
+
 /* MODULO DE DISCAPACIDAD */
 .tipologia{
 	display:flex;
@@ -111,6 +115,7 @@ nav ul li a:hover{
 .torta img{
 	transition: all 0.5s ease;
 	align-self: center;
+	margin-bottom: 5px;
 }
 .torta img:hover{
    -webkit-filter: grayscale(100%);
