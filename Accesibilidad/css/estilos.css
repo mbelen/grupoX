@@ -187,3 +187,56 @@ footer h5 a{
 	text-decoration: underline;
 }
 
+.descripcion {
+	display: flex;
+	justify-content: space-around; 
+}
+
+.A, .C {
+	background: #31081F;
+	border-radius: 10px; 
+	margin-top: 1%;
+
+}
+
+.B, .D {
+	background: #344769;
+	margin-top: 1%;
+	border-radius: 10px;
+}
+
+.A p, .A p strong, .A ul li strong, .A ul li, .A h4, .A span, .C p, .C h4 {
+	color: #f7f7EB;
+}
+
+.B p, .B h4, .B strong, .D p, .D h4, .D strong {
+	color: #f7f7EB;
+} 
+
+
+.simbolo {
+	width: 80px;
+	height: auto;
+	display: inline-block;
+}
+
+.A h4, .B h4, .C h4, .D h4 {
+	display: flex;
+	justify-content: space-around; 
+	border-bottom: solid 2px white;
+	margin-bottom: 1%;
+	height: 40px;
+}
+
+.ejemplo {
+	border-left: 2px white solid;
+	border-right: 2px white solid;
+}
+
+.D {
+	margin-bottom: 1%;
+}
+
+.tipologia a {
+	display: block;
+}
